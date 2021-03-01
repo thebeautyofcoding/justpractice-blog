@@ -80,7 +80,7 @@ const ReadBlog = ({ username }) => {
             return (
             
          
-                <div className="card">
+                <div key={i} className="card">
                  
                           
                                 

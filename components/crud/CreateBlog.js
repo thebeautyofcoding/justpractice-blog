@@ -246,25 +246,27 @@ const [didMount, setDidMount]=useState(false)
              </div>
                     </div>
             </div>
-            
+            <div className="imageUploaderContainer"><label className="label">Your blog thumbnail:</label>
             <div className="imageUploader">
-                <div className="h2-container m-medium"><h2>Your featured Blog-Thumbnail</h2></div>
-                <label className="Button Button--white">
+                
+                <div><label className="Button Button--white">
                     Upload your image
                 <input name="image" onChange={handleChange('image')} type="file" accept="image/png, image/jpeg" hidden />
                 </label>
+                </div>
                 {image &&
                     <div className="imagePreview m-medium">
                         <img src={image} />
                     </div>}  
                     </div>
                     </div>
+                      </div>
                     <div style={{ display: error ? 'flex' : 'none' }} className="error">{error}</div>
             <div style={{ display: success ? 'flex' : 'none' }} className="success">{success}</div>
             {createBlogForm()}
              
     
-            
+          
         
             </div>
             </>

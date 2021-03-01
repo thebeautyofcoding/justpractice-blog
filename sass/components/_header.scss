@@ -392,6 +392,8 @@
             font-size: 1.5rem;
             transition-property: color;
             transition: .2s ease;
+            display:flex;
+            justify-content:center;
 
             &:hover{
                 color:#4285f4;
@@ -404,7 +406,7 @@
 
         & .logo{
 
-            @media(max-width: 60em){
+            @media(max-width: 70em){
                 display:none;
                 visibility: hidden;
 

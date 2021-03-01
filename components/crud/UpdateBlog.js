@@ -343,7 +343,7 @@ const { error, sizeError, success, formData, title, hidePublishButton,photo } = 
     
     <div className="createBlogFormContainerWithImageUpload">
       
-        {updateBlogForm()}
+        
            <div className="center">{errorMessage()}</div>
           <div className="center">{successMessage()}</div>
 
@@ -372,18 +372,20 @@ const { error, sizeError, success, formData, title, hidePublishButton,photo } = 
                   </div>
         </div>
             
-           
+          <div className="imageUploaderContainer"><label className="label">Your blog thumbnail:</label> 
         <div className="imageUploader">
            
-             <div className="h2-container"><h2>Your featured Blog-Thumbnail</h2></div>
+            
                 <label className="Button m-medium">
                     Update your image
                 <input onChange={handleChange('image')} type="file" accept="image/*" hidden />
                 </label>
             <div className="imagePreview">
                 {!image ? <img src={`${API}/blog/photo/${slug}`} /> : <img src={image} />}</div>
-                </div>
+        </div>
+        </div>
 </div>
+{updateBlogForm()}
      
 </div>
  </div>  
