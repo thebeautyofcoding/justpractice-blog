@@ -476,7 +476,7 @@ article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 .mobile-nav .logo-container {
