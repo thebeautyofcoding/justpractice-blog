@@ -197,11 +197,11 @@ const router = useRouter()
         const linksMobile = document.getElementsByClassName('links-mobile')
         const mobileNav = document.getElementsByClassName('mobile-nav')
 
-
+     const logoContainer=document.getElementsByClassName('logo-container')[0]
 
       linksMobile[0].classList.toggle("active")
         mobileNav[0].classList.toggle("active")
-
+ logoContainer.classList.toggle("active")
         for (let i = 0; i < links.length; i++) {
             links[i].classList.toggle("active")
             
@@ -217,9 +217,10 @@ const router = useRouter()
     const linkClickHandler = () => {
         const linksMobile = document.getElementsByClassName('links-mobile')
         const mobileNav = document.getElementsByClassName('mobile-nav')[0]
+   
         mobileNav.classList.remove('active')
         linksMobile[0].classList.remove("active")
-        
+       
         // const links = document.getElementsByClassName('link-mobile')
         // for (let i = 0; i < links.length; i++) {
         //     links[i].classList.toggle("active")

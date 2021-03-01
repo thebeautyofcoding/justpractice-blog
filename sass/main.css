@@ -485,11 +485,13 @@ article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+  height: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: min-content;
+      flex-basis: min-content;
 }
 
 .mobile-nav .logo-container .logo {
@@ -502,6 +504,7 @@ article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 20vh;
 }
 
 .mobile-nav .logo-container .logo .hamburger {
