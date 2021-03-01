@@ -1361,6 +1361,7 @@ p {
 @media (max-width: 52em) {
   .search input, .search textarea {
     font-size: 16px;
+    width: 90vw;
   }
 }
 
