@@ -479,10 +479,10 @@
           flex-direction: column;
           transition: .5s ease;
           transition-property: height;;
-
+  height:70vh;
 
           &.active{
-              height:80vh;
+            
               display:flex;
               align-items: center;
               justify-content: center;

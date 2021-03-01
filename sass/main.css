@@ -464,10 +464,10 @@ article {
   transition: .5s ease;
   -webkit-transition-property: height;
   transition-property: height;
+  height: 70vh;
 }
 
 .mobile-nav.active {
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
