@@ -1,0 +1,30 @@
+.formGroup {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: row;
+}
+
+.formGroup input {
+  outline: none;
+}
+
+.categoryButtonContainer {
+  margin-top: 50px;
+}
+
+.categoryButton {
+  background: red !important;
+  margin: 5px;
+}
+
+.hr {
+  margin: 40px auto;
+}
+
+.categoryContainer {
+  min-height: 30vh;
+  width: 40vw;
+}
+/*# sourceMappingURL=Category.css.map */

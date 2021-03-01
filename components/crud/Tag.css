@@ -1,0 +1,42 @@
+.formGroup {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: row;
+}
+
+.formGroup input {
+  outline: none;
+}
+
+.tagButtonContainer {
+  margin-top: 50px;
+}
+
+.tagButton {
+  background: #85bd30 !important;
+  margin: 5px;
+}
+
+.hr {
+  margin: 40px auto;
+}
+
+.tagContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px auto;
+  width: 40vw;
+}
+
+.tagButtons {
+  min-height: 30vh;
+}
+/*# sourceMappingURL=Tag.css.map */

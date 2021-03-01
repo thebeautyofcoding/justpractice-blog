@@ -1,0 +1,53 @@
+.btn{
+    border-radius:5px;
+    border:none;
+    background-color:rgb(79, 190, 185);
+    color:white;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    margin-top: 10px;
+    outline:none;
+    transition: all .2s;
+    display:inline-block;
+    margin-right:1rem;
+    text-align: center;
+  
+ width: fit-content;
+
+
+        &:active{
+color:white;
+background-color:black;
+transform: scale(1.05);
+
+
+}
+    
+    // &:not(:last-child){
+    //     margin-right: 1rem;
+    // }
+    
+    &:visited, &:link{
+        text-decoration: none;
+
+    }
+    // &--small{
+    //     width: 5rem;
+    // }
+    &--red{
+        background-color: red;
+    }
+
+
+}
+
+
+
+.btn:hover{
+    color:orange;
+}
+
+
+.form__button{
+    display:block;
+}

@@ -1,0 +1,49 @@
+.formGroup{
+    width: 40vw;
+    display: flex;
+    display:row;
+    
+   
+    
+
+}
+
+.formGroup input {
+    outline:none;
+    
+}
+
+
+.tagButtonContainer{
+    margin-top:50px;
+   
+ 
+
+
+
+}
+.tagButton{
+    background:rgb(133, 189, 48) !important;
+    margin: 5px;
+   
+    
+    
+
+}
+
+.hr{
+    margin: 40px auto;
+   
+}
+.tagContainer{
+    display:flex;
+       display:flex;
+    flex-direction:column;
+    margin: 10px auto;
+    width: 40vw;
+
+}
+
+.tagButtons{
+    min-height:30vh;
+}

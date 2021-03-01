@@ -1,0 +1,50 @@
+.img{
+  
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position:relative;
+    
+    align-items: center;
+
+    margin:0 auto;
+
+    cursor:pointer;
+    
+
+    
+    &__small{
+        width: 17rem;
+        height:auto;
+        object-fit: cover;
+
+        &.image-preview{
+            width: 10rem;
+            height:10rem;
+            object-fit: cover;
+            border-radius:50%;
+            box-shadow: .2rem .5rem .5rem grey;
+}
+
+}
+&__big{
+    
+   
+    
+    width:100vw;
+  height: auto;
+  display:flex;
+  margin:0 auto;
+ 
+
+
+
+& img{
+    width: 100vw;
+    object-fit:cover;
+ 
+}
+}
+}
+

@@ -1,0 +1,20 @@
+ .form-component{
+        margin-right:.5rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .form-group{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        & label {
+            color:grey;
+        }
+        
+    }
+    

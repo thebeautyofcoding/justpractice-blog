@@ -1,0 +1,19 @@
+.inputComponent{
+    width:30vw;
+    display:flex;
+    margin: 5px auto;
+    padding: 10px 3px;
+    font-size: 25px;
+    border-radius: 10px;
+    border:none;
+    background-color:rgb(213, 248, 246);
+    color:rgb(83, 83, 83);
+
+    
+}
+
+.inputComponent input{
+
+    vertical-align:-webkit-baseline-middle;
+    
+}

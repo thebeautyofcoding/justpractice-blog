@@ -1,0 +1,282 @@
+
+
+.center{
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+}
+
+.h1{
+    margin: 3rem 0;
+    font-size:3rem;
+    width:90vw;
+    word-break: break-all;
+    margin:0 auto;
+}
+
+
+.margin-bottom-md{
+    margin:3rem 0;
+}
+
+
+.marked{
+            background-color: rgba(255, 166, 0, 0.301);
+          
+            
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            width:90vw;;
+            
+
+        }
+
+        .badge{
+            
+            
+            
+        }
+        .nav-links{
+            position:relative;
+        }
+
+
+        .h1-container{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            margin: 2rem auto;
+        }
+
+        .h2-container{
+              display:flex;
+          
+            justify-content: center;
+            margin-bottom:1rem;
+            
+           
+        }
+
+
+
+        .Button{
+    border-radius:5px;
+    border:none;
+    background-color: rgb(66, 133, 244);
+    padding: .3rem 1rem;
+    font-size: 1rem;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    
+
+    &--red{
+        background-color:crimson;
+    }
+
+    &--green{
+        background-color:green;
+        color:white;
+    }
+
+   
+
+
+    &:active{
+        transform: scale(0.8);
+    }
+
+
+ 
+ 
+    &--white{
+         background-color: white;
+         color:rgb(66, 133, 244);
+         cursor:pointer;
+         border: 1px solid rgb(66, 133, 244);
+         
+
+         &--white:active{
+            transform: scale(0.8);
+         }
+    }
+
+//     &--white:hover{
+//     background-color: rgb(66, 133, 244);;
+//     color:white;
+// }
+// &--white:active{
+// transform: scale(0.8);
+//     background-color: rgb(66, 133, 244);;
+//     color:white;
+// }
+   
+    outline:none;
+   
+
+    text-decoration: none;
+}
+
+
+
+// .Button:active{
+// color:orange;
+// background-color:black;
+// transform: scale(0.8);
+
+
+// }
+
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &__row{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        width:90vw;
+        margin:1rem auto;
+        align-items:center;
+
+
+        &-reverse{
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+       
+    
+
+        @media(max-width:27em){
+            display:flex;
+            
+            flex-direction: column;
+            margin: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+          @media(max-width:21.5em){
+            display:flex;
+            flex-direction: column;
+            width: 90vw;
+           
+           
+        }
+    }
+        &__column{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+               width:95vw;
+               margin:0 auto;
+
+               
+               
+        }
+
+}
+
+.mr-small{
+margin-right: 1rem;
+}
+
+.mb-small{
+margin-bottom: 1rem;
+}
+.mt-small{
+margin-top: 1rem;
+}
+
+.mt-medium{
+    margin-top:3rem;
+}
+
+.mt-big{
+margin-top: 5rem;
+}
+
+.m-small{
+    margin:.5rem;
+}
+.m-medium{
+    margin:2rem;
+}
+.ml-medium{
+    margin-left: 2rem;
+}
+.ml-big{
+    margin-left: 5rem;
+}
+
+.mt-big{
+    margin-top:5rem;
+}
+
+.m-big{
+    margin:5rem;
+}
+ul{
+    display:flex;
+
+}
+
+ul li{
+    text-decoration: none;;
+    list-style: none;
+    
+}
+
+.flex{
+    display:flex;
+}
+.ninetyvw{
+ 
+    line-break: auto;
+    word-wrap:break-word;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+
+.left-align{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+}
+
+.grid{
+    display:grid;
+}
+
+
+.span--red{
+    color:crimson;
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+p{
+    width:90%;
+    
+}
+
+
+.flex-col{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

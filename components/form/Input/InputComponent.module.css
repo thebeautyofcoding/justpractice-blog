@@ -1,0 +1,18 @@
+.inputComponent {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px auto;
+  padding: 10px 3px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d5f8f6;
+  color: #535353;
+}
+
+.inputComponent input {
+  vertical-align: -webkit-baseline-middle;
+}
+/*# sourceMappingURL=InputComponent.module.css.map */

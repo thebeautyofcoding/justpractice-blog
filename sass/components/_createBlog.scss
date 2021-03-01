@@ -1,0 +1,323 @@
+
+
+
+
+
+
+
+.form{
+    display:flex;
+    flex-direction: column;
+   
+    align-items: center;
+    @media(max-width:33.5em){
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+   
+}
+  
+
+
+
+
+   
+
+     .title{
+        
+         margin-bottom:1rem;
+         display:flex;
+        width: 60vw;
+        
+      & input{
+       width:100%;
+   }
+    
+}
+
+
+ 
+    
+    
+   
+     &__button{
+        margin-top:5rem;;    
+    }
+    &__title {
+        display:flex;
+        flex-direction:row;
+        width:100%;
+         display:flex;
+         justify-content: center;
+         margin-bottom: 2rem;;
+         margin-top:2rem;
+         align-items: center;
+         
+
+    
+    
+        &_label  {
+        
+            color:grey;
+            margin-right:1rem;
+            
+          
+            }
+       
+
+            &_input {
+                padding: .5rem .5rem;
+             
+                outline:none;
+                border-radius: 0.5rem;
+                border:none;
+                background-color: rgba(179, 174, 174, 0.582);
+                align-items: center;
+               
+                
+
+                &::placeholder {
+                    padding-left:2rem;
+                    
+                }
+            }
+}
+}
+
+
+
+
+
+
+.createBlogFormContainerWithImageUpload{
+    display:flex;
+     margin: 0 auto;
+    flex-direction: column;
+  
+;
+
+
+
+
+
+
+    width:95vw;
+    @media(max-width:33.5em){
+    width:300px;
+    display:flex;
+    
+    
+}
+   
+
+   
+
+}
+
+
+
+
+.imageUploader{
+    margin-top:5rem;;
+    align-items:center;
+    display:flex;
+    flex-direction: column-reverse;
+    min-width:200px;
+
+
+     @media(max-width:33.5em){
+
+  
+}
+
+    
+  
+}
+.seperatorLine{
+    display:flex;
+    flex-direction: column;;
+    margin: 1rem;
+    // grid-column: 1/1;
+    // grid-row:1/2;
+}
+.seperatorLine{
+    display:flex;
+    flex-direction: column;;
+    margin: 1rem;
+    // grid-column: 3/3;
+    // grid-row:1/2;
+}
+
+
+.unorederedList  {
+  margin-right:5rem;;
+  display:flex;
+  flex-direction:column;
+  max-height: 40vh;
+  justify-content: center;
+  align-items: center;
+   
+    font-size:1rem;
+  
+    margin:0 auto;
+  
+
+//     & .ul-one ul{
+//         @media(max-width:52em){
+//             display:grid;
+//     grid-column: 1 /2;
+//     grid-row: 1/2;
+// }
+//     }
+
+//         & .ul-two ul{
+//         @media(max-width:52em){
+//             display:grid;
+//     grid-column: 2 /3;
+//     grid-row: 1/2;
+// }
+//     }
+    
+    
+
+
+
+}
+.unorederedList ul {
+  
+    margin:2rem 0;
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+
+    
+   
+
+    }
+   
+    
+    
+    
+    
+  
+
+
+.unorederedList ul li{
+    margin:.5rem 0;
+    list-style:none;
+    display:flex;
+    align-items: center;
+    align-items: center;;
+   
+   
+    
+    
+    
+  
+}
+
+.unorederedList ul li label{
+    font-size:1rem;
+   
+    
+    
+    
+  
+}
+.unorederedList ul li input{
+    margin: 0rem 1rem;
+    zoom:2
+    
+    
+  
+}
+
+
+
+
+.tagsAndCatsContainer{
+ 
+
+    margin:0 auto;
+  
+    align-items: center;;
+   display:flex;
+flex-direction: row;
+@media(max-width:52em){
+display:flex;
+flex-direction: column;
+}
+
+
+}
+.imageUploader{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:280px;
+    margin:2rem auto;
+
+
+ 
+}
+
+
+
+.imagePreview{
+    display:flex;
+    object-fit:cover;
+    height:auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-bottom:2rem;
+
+    & img{
+        width: 300px;
+        box-shadow: 0 .5rem 1rem;
+        border-radius: 10px;
+        border:10px solid black;
+    }
+}
+
+.form__editor{
+  display:flex;
+  width:100%;
+
+
+
+@media(max-width:33.5em){
+
+}
+
+}
+
+.tagsAndCatsAndImageUploadContainer{
+
+
+display:flex;
+flex-direction: column;;
+@media(min-width:52em){
+display:flex;
+flex-direction:row;
+
+
+}
+
+
+
+
+}
+
+.createBlogFormContainerWithImageUpload{
+    display:flex;
+    flex-direction: column;
+}

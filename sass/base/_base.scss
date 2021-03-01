@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+ 
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+html{
+    font-size:100%;
+}
+body{
+
+    box-sizing: border-box;
+    width:100%;
+    margin: 0 auto;
+    height:100vh;
+    font-family:'Open Sans', 'sans-serif';
+   
+
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+
+
+}
+
+
+ul{
+    list-style: none;
+
+& a, a:visited, a:active{
+text-decoration: none;
+color: #4285f4; 
+}
+    
+}
+
+.search-results{
+   font-size: 1.2rem;
+font-style: italic;
+color: #4285f4; 
+}
+
+h3{
+    word-break:break-all;
+}
+
+textarea{
+    font-family: 'Open Sans', 'sans-serif';
+}

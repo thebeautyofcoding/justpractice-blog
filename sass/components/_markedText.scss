@@ -1,0 +1,31 @@
+.success{
+    background-color: white;
+    color:green;;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: 0rem 1rem;
+    border-radius: 5px;
+    margin:2rem auto;
+    
+
+
+
+
+}
+
+
+.error{
+    background-color: white;
+    color:#ff0000;
+      display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: .5rem;
+    border-radius: 5px;
+    margin:2rem auto;
+
+
+}

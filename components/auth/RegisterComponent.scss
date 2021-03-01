@@ -1,0 +1,39 @@
+.formGroup{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 600px;
+    align-items: center;
+    margin: 10px auto;
+    
+    
+    
+}
+
+
+
+.formGroup input{
+    width:100%;
+    display:flex;
+    margin: 5px auto;
+    padding: 5px 3px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:none;
+    background-color:rgb(213, 248, 246);
+    color:rgb(83, 83, 83);
+
+   
+
+      
+}
+
+.formGroup input::placeholder{
+
+color:rgb(156, 156, 156);
+opacity: 0.6
+}
+
+
+
+
