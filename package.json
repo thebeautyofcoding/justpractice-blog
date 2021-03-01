@@ -18,7 +18,7 @@
     "jsonwebtoken": "^8.5.1",
     "logger": "0.0.1",
     "moment": "^2.29.1",
-    "next": "^10.0.5",
+    "next": "^10.0.8-canary.11",
     "next-redux": "^0.1.1",
     "next-redux-wrapper": "^6.0.2",
     "next-sass": "^1.0.3",
