@@ -60,13 +60,18 @@ useEffect(() => {
 
     const searchSubmit = (e) => {
         e.preventDefault()
-
-
-        listSearch({ search }).then(data => {
+        try {
+            listSearch({ search }).then(data => {
      
             setValues({ ...values, results: data,search:'', searched: true, message: `${data.length} ${data.length ===1 ? 'blog found': 'blogs found'}` })
   
         })
+        } catch (err) {
+            console.log(err.response)
+            setValues({ ...values, results: data,search:'', searched: true, message: err.response.data.error })
+}
+
+        
     }
 
     const handleChange = (e) => {
@@ -132,7 +137,7 @@ useEffect(() => {
             
             <form className=" container__row mt-small" onSubmit={searchSubmit}>
                 <div className="form-component container__column">
-                    <input className="input"onInput={searchClear}onChange={handleChange} onKeyUp={showSearchSuggOnKeyUp} type="search" value={search}  placeholder="Search for blog posts by title or blog body..." />
+                    <input className="input search-bar-input"onInput={searchClear}onChange={handleChange} onKeyUp={showSearchSuggOnKeyUp} type="search" value={search}  placeholder="Search for blog posts by title or blog body..." />
                
                     {!searched && searchSuggestions && showSearchSuggestions()}
                                  <div className="form-component">

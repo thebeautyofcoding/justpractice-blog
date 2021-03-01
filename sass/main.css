@@ -48,6 +48,13 @@ textarea {
   font-family: 'Open Sans', 'sans-serif';
 }
 
+@media (max-width: 52em) {
+  input, textarea {
+    font-size: 16px;
+    width: 90vw;
+  }
+}
+
 .btn {
   border-radius: 5px;
   border: none;
@@ -1344,7 +1351,7 @@ p {
   color: grey;
 }
 
-.search {
+.search-bar-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1356,16 +1363,16 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 2rem auto;
+  width: 60vw;
 }
 
 @media (max-width: 52em) {
-  .search .input, .search textarea {
-    font-size: 16px;
-    width: 90vw;
+  .search-bar-input {
+    width: 80vw;
   }
 }
 
-.search .search-title {
+.search-bar-input .search-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1386,13 +1393,13 @@ p {
           align-items: center;
 }
 
-.search .search-title .search-results-x {
+.search-bar-input .search-title .search-results-x {
   font-size: 1.5rem;
   font-style: normal;
   cursor: pointer;
 }
 
-.search .search-results {
+.search-bar-input .search-results {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1410,7 +1417,7 @@ p {
   width: 350px;
 }
 
-.search .search-results a {
+.search-bar-input .search-results a {
   text-decoration: none;
   color: #4285f4;
 }
@@ -1434,7 +1441,7 @@ p {
           justify-content: center;
 }
 
-@media (max-width: 25em) {
+@media (max-width: 52em) {
   .searchSuggestions {
     width: 80vw;
   }
