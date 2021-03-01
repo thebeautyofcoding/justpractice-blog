@@ -1358,6 +1358,12 @@ p {
   margin: 2rem auto;
 }
 
+@media (max-width: 52em) {
+  .search input, .search textarea {
+    font-size: 16px;
+  }
+}
+
 .search .search-title {
   display: -webkit-box;
   display: -ms-flexbox;
