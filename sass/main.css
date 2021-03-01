@@ -443,6 +443,8 @@ article {
   }
   .links-mobile .link-mobile {
     text-align: center;
+    padding: 1rem;
+    margin: 1rem;
   }
   .links-mobile .link-mobile a {
     color: grey;
