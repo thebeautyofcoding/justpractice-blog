@@ -9,7 +9,7 @@ module.exports = {
     },
 
     env: {
-        PRODUCTION: env.process.PRODUCTION,
+        PRODUCTION: process.env.PRODUCTION,
         APP_NAME: "justPractice",
         DOMAIN_PRODUCTION: process.env.DOMAIN_PRODUCTION,
         API_PRODUCTION: process.env.API_PRODUCTION,
