@@ -429,6 +429,11 @@ article {
         -ms-flex-align: center;
             align-items: center;
     margin-top: -7rem;
+    opacity: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
   }
   .links-mobile.active {
     display: -webkit-box;
@@ -438,9 +443,7 @@ article {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-flex: 8;
-        -ms-flex-positive: 8;
-            flex-grow: 8;
+    opacity: 1;
   }
   .links-mobile .link-mobile {
     text-align: center;
@@ -1377,7 +1380,8 @@ p {
 
 @media (max-width: 52em) {
   .search-bar-input {
-    width: 80vw;
+    width: 90vw;
+    padding: .5rem;
   }
 }
 
