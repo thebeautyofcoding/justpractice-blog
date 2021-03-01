@@ -446,6 +446,7 @@
             justify-content: space-between;
             height:60vh;
             align-items: center;
+            margin-top: -7rem;
             
             &.active{
                 display:flex;
@@ -458,8 +459,7 @@
             }
             & .link-mobile {
                 text-align: center;;
-                padding:1rem;
-                margin:1rem;
+              
 
                 & a{
                     color:grey;

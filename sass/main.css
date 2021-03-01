@@ -428,6 +428,7 @@ article {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: -7rem;
   }
   .links-mobile.active {
     display: -webkit-box;
@@ -443,8 +444,6 @@ article {
   }
   .links-mobile .link-mobile {
     text-align: center;
-    padding: 1rem;
-    margin: 1rem;
   }
   .links-mobile .link-mobile a {
     color: grey;
