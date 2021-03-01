@@ -302,7 +302,7 @@ const router = useRouter()
                         </div>
                     </div>
 
-                    <div className="container">
+                    <div className="container links-mobile-container">
                         <ul className="links-mobile">
                             
                             <li onClick={linkClickHandler} className="link-mobile">
@@ -327,7 +327,7 @@ const router = useRouter()
                                     <Link href="/register"><a>Register</a></Link>
                                 </li>}
                             <li>
-                                <button onClick={linkClickHandler} className="Button Button--red" onClick={() => {
+                                <button onClick={linkClickHandler} className="Button Button--red mb-small" onClick={() => {
                                     linkClickHandler()
                                     signout(dispatch(successSignout()))
                                 }}>Logout</button></li>

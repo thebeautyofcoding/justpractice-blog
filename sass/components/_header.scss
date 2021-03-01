@@ -441,8 +441,8 @@
             width:100vw;
             display:none;
             flex-direction: column;
-            justify-content: space-evenly;
-            height:80vh;
+            justify-content: space-between;
+            height:60vh;
             align-items: center;
             &.active{
                 display:flex;
@@ -471,10 +471,11 @@
 
 
           &.active{
-              height:100vh;
+              height:80vh;
               display:flex;
               align-items: center;
               justify-content: center;
+            //   justify-content: space-around;
           }
           
           
@@ -485,6 +486,7 @@
             justify-content: center;
            height:100%;
             flex-direction: column;
+            
            
         
             
@@ -646,4 +648,11 @@ background: grey;
         cursor: pointer;
     }
     cursor: pointer;
+}
+
+.links-mobile-container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
