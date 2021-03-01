@@ -298,7 +298,7 @@ const router = useRouter()
                 <div className="mobile-nav">
                   
                     <div className="logo-container">
-                        <div className="logo" onClick={onClickHandler} >
+                        <div className="logo-button" onClick={onClickHandler} >
                             <div><div className="hamburger"></div></div>
                         </div>
                     </div>
