@@ -479,7 +479,7 @@
           flex-direction: column;
           transition: .5s ease;
           transition-property: height;;
-  height:70vh;
+
 
           &.active{
             
@@ -487,6 +487,7 @@
               align-items: center;
               justify-content: center;
             //   justify-content: space-around;
+              height:70vh;
           }
           
           
