@@ -10,7 +10,7 @@ module.exports = {
 
     env: {
         PRODUCTION: process.env.PRODUCTION,
-        APP_NAME: "justPractice",
+        APP_NAME: process.env.APP_NAME,
         DOMAIN_PRODUCTION: process.env.DOMAIN_PRODUCTION,
         API_PRODUCTION: process.env.API_PRODUCTION,
         API_DEVELOPMENT: process.env.API_DEVELOPMENT,
