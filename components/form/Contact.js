@@ -27,7 +27,7 @@ const Contact = ({authorEmail}) => {
             setValues({ ...values, buttonText: 'Sent', error: '', sent: true, name: '', email: '' })
 
         } catch (err) {
-            console.log(err)
+            console.log(err.response.data)
         }
 
 
