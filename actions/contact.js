@@ -9,16 +9,7 @@ export const emailContactForm = async(data) => {
     if (data.authEmail) emailEndpoint = `${API}/contact-blog-author`
     else emailEndpoint = `${API}/contact`
     
-    const response = await axios.post(emailEndpoint,
-    
-      {
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-         
-        },
-        data
-      })
+    const response = await axios.post(emailEndpoint,data)
 
     return response
 }
