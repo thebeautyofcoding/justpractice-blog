@@ -14,7 +14,8 @@ export const emailContactForm = async(data) => {
       {
         headers: {
           Accept: 'application/json',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+           'Access-Control-Allow-Origin': '*'
         },
         data
       })
