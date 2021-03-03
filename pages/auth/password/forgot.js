@@ -53,7 +53,7 @@ const ForgotPassword = () => {
     return (<>
         <div className="container">
         <h2 >Forgot your password?</h2>
-        <p className="m-medium">Please type your email in!</p>
+        <p className="m-medium center">Please type your email in!</p>
         { showError() }
             {showMessage()}
             <div>{showForm && <div>
