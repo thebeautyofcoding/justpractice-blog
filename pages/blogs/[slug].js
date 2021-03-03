@@ -12,9 +12,9 @@ const SingleBlog = ({ blog, query }) => {
     const loadRelatedPosts = async(blog) => {
         try {
             const response = await listRelated({ blog })
-            console.log(response.data)
+            
             setRelatedPosts(response.data)
-            console.log(relatedPosts)
+          
         } catch (err) {
             console.log(err)
        }
@@ -56,11 +56,15 @@ const SingleBlog = ({ blog, query }) => {
     const showRelatedBlogPosts = () => {
        return relatedPosts.map((blog, i) => {
            return <div className="thumbail-card" key={i}>
+               <Link href={`/blogs/${blog.slug}`}>
+                   <a className="a-card">
                 <div className="img img--small"><img  src={`${API}/blog/photo/${blog.slug}`}/></div>
                 <h3 className="mt-small">{blog.title}</h3>
                 <div className="success">
                     Posted {moment(blog.updatedAt).fromNow()} by&nbsp;<Link href={`/profile/${blog.postedBy.username}`}><a>{blog.postedBy.username}</a></Link>
-                </div>
+                       </div>
+                       </a>
+                   </Link>
             </div>
         })
     }
@@ -85,7 +89,7 @@ const SingleBlog = ({ blog, query }) => {
                     </section>
                     <section>
                         <div  className="">
-                            <h1 className="h1">
+                            <h1 className="h1 container m-medium">
                                 {blog.title}
                             </h1>
                             <p className="center marked">
@@ -104,9 +108,9 @@ const SingleBlog = ({ blog, query }) => {
                     </section>
                     <div className="container">
                         <section >
-                            <div className="ninetyvw">
+                      
                                 {renderHtml(blog.body)}
-                            </div>
+                        
                         </section>
                     </div>
                     <hr/>

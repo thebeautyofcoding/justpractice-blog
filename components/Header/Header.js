@@ -251,7 +251,7 @@ const router = useRouter()
                     {router.pathname==='/user' &&  <div onClick={toggleDashboardSidebar} className="sidebar-button "><div></div></div>}
                     <div className="logo">
                         {/* <Link href="#"><img src="/images/NavbarBrand.png" /></Link> */}
-                        <Link href="/"><div className="logo-parts"><span className="span--red">just</span><div className="logo-div">Practice</div></div></Link>
+                        <Link href="/"><div className="logo-parts"><span className="span--red">writing</span><div className="logo-div">IsLove</div></div></Link>
                     </div>
 
                     <li className="link">
@@ -261,7 +261,7 @@ const router = useRouter()
                     <li className="link link__badge">
                         <Link href="/blogs"><a>Blogs<span className="badge">{blogsTotal}</span></a></Link>
                     </li>
-                    <li className="link link__badge">
+                    <li className="link">
                         <Link href="/contact"><a>Contact</a></Link>
                     </li>
                     {isAuth() && isAuth().name &&
@@ -311,6 +311,9 @@ const router = useRouter()
                             </li>
                             <li onClick={linkClickHandler} className="link-mobile link-mobile__badge">
                                 <Link href="/blogs"><a><span className="badge__mobile">Blogs({blogsTotal})</span></a></Link>
+                            </li>
+                            <li onClick={linkClickHandler} className="link-mobile link-mobile__badge">
+                                <Link href="/contact"><a>Contact</a></Link>
                             </li>
                             {isAuth() &&
                                 <li  onClick={linkClickHandler}className="link-mobile">
