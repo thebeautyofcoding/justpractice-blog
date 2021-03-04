@@ -26,13 +26,13 @@ const Blogs = ( {blogs, categories, tags, router, blogsLimit, totalBlogs, blogsS
 
    const head = () => {
         return <Head>
-            <title>Programming blogs | {APP_NAME}</title>
-            <meta name="description" content="Programming blogs and tutorials on react node next vue php laravael and web devleopment" />
+            <title>Portfolio Project | {APP_NAME}</title>
+            <meta name="description" content="just some random stuff" />
 
             <link rel="cannonical" href={`${DOMAIN}${router.pathname}`} />
-            <meta property="og:title" content={`Lastest web development tutorials | ${APP_NAME}`} />
+            <meta property="og:title" content={`just some random stuff | ${APP_NAME}`} />
             <meta property="og:description"
-                content="Programming blogs and tutorials on react node next vue php laravael and web devleopment"
+                content="just some random stuff"
             />
             <meta property="og:type" content="website" />
             <meta property="og:url" content={`${DOMAIN}${router.pathname}`} />
