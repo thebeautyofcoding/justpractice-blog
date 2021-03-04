@@ -241,7 +241,20 @@ ul li{
 
 .flex{
     display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &--even{
+        justify-content: space-evenly;
+     
+    }
+
+    &--col{
+        flex-direction: column;;
+    }
 }
+
 .ninetyvw{
  
     line-break: auto;

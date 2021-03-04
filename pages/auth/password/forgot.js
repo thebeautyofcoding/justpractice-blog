@@ -52,7 +52,7 @@ const ForgotPassword = () => {
 
     return (<>
         <div className="container">
-        <h2 >Forgot your password?</h2>
+        <h2 className="m-medium">Forgot your password?</h2>
         <p className="m-medium center">Please type your email in!</p>
         { showError() }
             {showMessage()}

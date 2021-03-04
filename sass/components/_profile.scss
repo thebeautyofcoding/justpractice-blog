@@ -1,0 +1,21 @@
+
+.profileContainer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 auto;
+    width:90vw;
+   & .profile{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+    @media(max-width:41.4em){
+        display:block;
+    }
+
+}
+}
