@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import {useDispatch} from 'react-redux'
 import { profile, update } from '../../actions/user'
 import {successUserUpdate} from '../../redux/user/user.actions'
-import { Router } from 'next/router';
+
 import { API } from "../../config";
 
 
@@ -60,14 +60,20 @@ const ProfileUpdate = () => {
 
         try {
             const data = await update(token, userData)
+             setValues({ ...values, username: data.data.username, name: data.data.name, email: data.data.email, about: data.data.about, usernameForPhoto: data.data.username, success: true, loading: false })
             updateUser(data, () => {
-                setValues({ ...values, username: data.data.username, name: data.data.name, email: data.data.email, about: data.data.about, usernameForPhoto: data.data.username, success: true, loading: false })
-
+              
+               
+            
                 dispatch(successUserUpdate(data.data))
-                Router.replace('/user')
+               
+                
+                 
+              
             })
         } catch (err) {
-            console.log(err.response)
+          
+            setValues({ ...values, error: err.response.data.error, loading: false})
         }
 
              
@@ -162,8 +168,8 @@ console.log(username, name, email)
            
 
               
-            <div className="success " style={{ display: success ? 'flex' : 'none' }}><p>{success && 'Profile successfully updated'}</p></div>    
-                <div className="error"style={{display: error ? 'flex' : 'none'}}><p>{error && error} </p></div>
+            <div className="success " style={{ display: success ? 'flex' : 'none' }}><p className="center">{success && 'Profile successfully updated'}</p></div>    
+                <div className="error "style={{display: error ? 'flex' : 'none'}}><p className="center">{error && error} </p></div>
                 {showLoading()}
             {profileUpdateForm()}
                 </div> 

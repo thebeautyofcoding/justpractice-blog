@@ -93,7 +93,7 @@ const SingleBlog = ({ blog, query }) => {
                                 {blog.title}
                             </h1>
                             <p className="center marked">
-                                Written by <Link href={`${API}/profile/${blog.postedBy.name}`}>
+                                Written by <Link href={`/profile/${blog.postedBy.username}`}>
                                     <a>{blog.postedBy.username}</a></Link>
                                     Published {moment(blog.updatedAt).fromNow()}
                                 

@@ -227,6 +227,10 @@ margin-top: 5rem;
 .m-big{
     margin:5rem;
 }
+
+.m-auto{
+    margin: 0 auto;
+}
 ul{
     
     display:flex;
@@ -284,8 +288,8 @@ ul li{
     font-size: 1.5rem;
 }
 p{
-    width:90%;
-    margin:0 auto;
+    width:90vw;
+
     
 }
 
