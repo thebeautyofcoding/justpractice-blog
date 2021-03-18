@@ -330,11 +330,11 @@ const router = useRouter()
                                 <li onClick={linkClickHandler}className="link-mobile">
                                     <Link href="/register"><a>Register</a></Link>
                                 </li>}
-                            <li>
+                            {isAuth() && <li>
                                 <button onClick={linkClickHandler} className="Button Button--red mb-small" onClick={() => {
                                     linkClickHandler()
                                     signout(dispatch(successSignout()))
-                                }}>Logout</button></li>
+                                }}>Logout</button></li>}
 
                         </ul>
                     </div>
